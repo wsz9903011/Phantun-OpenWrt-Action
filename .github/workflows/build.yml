@@ -65,10 +65,7 @@ jobs:
         cd $SDK
         make package/openwrt-udp2raw/compile -j$(nproc) V=s
 
-    - name: Build luci-app-udp2raw
-      run: |
-        cd $SDK
-        make package/luci-app-udp2raw/compile -j$(nproc) V=s
+
 
     - name: Upload package
       uses: actions/upload-artifact@v4
