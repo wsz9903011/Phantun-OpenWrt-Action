@@ -2,7 +2,11 @@ name: Build OpenWrt Package
 
 on:
   workflow_dispatch:
-
+    inputs:
+      package:
+        description: "Package name"
+        required: true
+        default: "phantun"
 jobs:
   build:
     runs-on: ubuntu-24.04
@@ -60,10 +64,10 @@ jobs:
         cd $SDK
         make defconfig
 
-    - name: Build openwrt-udp2raw
+    - name: Build Package
       run: |
         cd $SDK
-        make package/openwrt-udp2raw/compile -j$(nproc) V=s
+        make package/${{ github.event.inputs.package }}/compile -j$(nproc) V=s
 
 
 
