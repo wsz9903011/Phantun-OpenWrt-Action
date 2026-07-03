@@ -34,7 +34,7 @@
 ### 1. Fork 或 Clone 本仓库
 
 ```bash
-git clone https://github.com/<yourname>/phantun-builder.git
+git clone https://github.com/<yourname>/Phantun-OpenWrt-Action.git
 ```
 
 ---
