@@ -53,6 +53,8 @@ jobs:
     - name: Update feeds
       run: |
         cd $SDK
+        ./scripts/feeds update packages
+        ./scripts/feeds install rust
         make defconfig
 
     - name: Copy package
