@@ -167,3 +167,5 @@ bin/packages/<architecture>/
 - 不需要本地 Linux 环境
 - 更换 OpenWrt 架构仅需修改 SDK 下载地址
 - 更换 OpenWrt 版本同样只需修改 SDK 下载地址
+- <img width="2037" height="363" alt="9ecad959-3fce-4a2a-a139-3dd2df38eff2" src="https://github.com/user-attachments/assets/b51d56cd-2273-46a5-8b0e-cc8ecc1bd568" />
+
